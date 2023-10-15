@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+#herosection {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.left-section {
+    /* background-color: red; */
+    width: 60%;
+    display: flex;
+}
+
+.left-section img {
+    width: 24rem;
+    object-fit: cover;
+}
+
+.left-section .left-imgs, .left-section .right-imgs {
+    width: 100%;
+}
+
+#finger-ring {
+    position: absolute;
+    z-index: 99;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    border: 5px solid red;
+}
+
+.ring {
+    position: relative;
+}
+
+#rings {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#rings img {
+    width: 5rem;
+}
+
+#rings div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.ring-1 {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(238, 238, 238);
+}
+
+.ring-2 {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.ring-3 {
+    border-right: 1px solid rgb(238, 238, 238);
+}
+
+#shop {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.certifide {
+    display: grid;
+    place-items: center;
+    margin-top: .5rem;
+    position: relative;
+}
+
+.certifide img {
+    width: 17rem;
+    /* height: 20rem; */
+    border: 1px solid rgb(212, 212, 212);
+    object-fit: cover;
+    
+}
+
+.certifide a {
+    display: inline-block;
+    width: 100%;
+    background: rgba(13, 13, 14, 0.8);
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 0;
+}
