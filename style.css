@@ -34,7 +34,7 @@ body {
 
 }
 .right-section {
-  width: 70%;
+  width: 38%;
   padding: 1rem;
 }
 
@@ -52,7 +52,7 @@ body {
   position: absolute;
   z-index: 99;
   top: -5px;
-  left: -5px;
+  left: 0;
   width: 100%;
 }
 
@@ -309,7 +309,7 @@ body {
 #quality3 {
   display: flex;
   align-items: end;
-  gap: 2rem;
+  gap: 3rem;
   padding: 1.5rem 0;
   font-family: sans-serif;
   font-size: 14px;
@@ -328,11 +328,10 @@ body {
 #quality3 .flex {
   display: flex;
   align-items: center;
-  /* background-color: red; */
-  width: 24rem;
-  /* border: 3px solid red; */
+  width: 20rem;
   overflow: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 #quality3 .flex::-webkit-scrollbar {
@@ -346,7 +345,7 @@ body {
 
 #button-1 {
   position: absolute;
-  left: -3rem;
+  left: -2.5rem;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
@@ -363,7 +362,7 @@ body {
 
 #button-2 {
   position: absolute;
-  right: -1rem;
+  right: -2.5rem;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999;
@@ -402,16 +401,18 @@ body {
   padding: 1.5rem;
 }
 
-#numbers .flex {
+#numbers .flex#scroller {
   display: flex;
   align-items: center;
   font-size: 18px;
   color: #6d6d6d;
   gap: 1rem;
-  width: 29rem;
+  width: 24rem;
   overflow: auto;
   margin: auto;
+  scroll-behavior: smooth;
 }
+
 
 #numbers .flex::-webkit-scrollbar {
   display: none;
@@ -425,6 +426,7 @@ body {
   display: grid;
   place-items: center;
   aspect-ratio: 3;
+  transition: .2s;
 }
 
 #numbers .flex div:hover {
@@ -457,7 +459,7 @@ body {
   background: transparent;
   color: #6d6d6d;
   right: 0;
-  top: 0;
+  top: 22px;
   z-index: 99;
   display: grid;
   place-items: center;
